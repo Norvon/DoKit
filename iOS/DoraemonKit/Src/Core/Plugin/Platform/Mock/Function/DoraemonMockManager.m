@@ -329,6 +329,7 @@
 }
 
 - (void)uploadSaveData:(DoraemonMockUpLoadModel *)upload atView:(UIView *)view{
+    return;
     NSString *apiId = upload.apiId;
     NSString *result = upload.result;
     NSString *projectId = [DoraemonManager shareInstance].pId;

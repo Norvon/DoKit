@@ -195,6 +195,7 @@
 }
 
 - (void)upLoadData{
+    return;
     if (self.caseName.length>0 && self.testPerson.length>0) {
         NSString *testTime = [DoraemonUtil dateFormatNow];
         NSString *phoneName = [DoraemonAppInfoUtil iphoneType];
