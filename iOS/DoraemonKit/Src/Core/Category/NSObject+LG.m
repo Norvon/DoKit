@@ -7,6 +7,7 @@
 
 #import "NSObject+LG.h"
 #import "DoraemonManager.h"
+#import "DoraemonCacheManager.h"
 
 @implementation NSObject (LG)
 + (void)load {
@@ -19,5 +20,6 @@
 + (void)lg_handleDidFinishLaunching {
     [DoraemonManager shareInstance].supportedInterfaceOrientations = UIInterfaceOrientationMaskAll;
     [[DoraemonManager shareInstance] install];
+    [[DoraemonCacheManager sharedInstance] saveNSLogSwitch:YES];
 }
 @end
